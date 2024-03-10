@@ -31,7 +31,7 @@ func init() {
 		ReflectStubFn: func(caller func(string, context.Context, []any, []any) error) any {
 			return cartService_reflect_stub{caller: caller}
 		},
-		RefData: "⟦dccb8147:wEaVeReDgE:github.com/ServiceWeaver/onlineboutique/cartservice/CartService→github.com/ServiceWeaver/onlineboutique/cartservice/cartCache⟧\n",
+		RefData: "⟦dccb8147:wEaVeReDgE:github.com/ServiceWeaver/onlineboutique/cartservice/CartService→github.com/ServiceWeaver/onlineboutique/cartservice/cartCache⟧\n⟦e405e016:wEaVeReDgE:github.com/ServiceWeaver/onlineboutique/cartservice/CartService→github.com/ServiceWeaver/onlineboutique/actionLogService/ActionLogService⟧\n",
 	})
 	codegen.Register(codegen.Registration{
 		Name:   "github.com/ServiceWeaver/onlineboutique/cartservice/cartCache",
@@ -578,7 +578,7 @@ func (s cartCache_client_stub) Remove(ctx context.Context, a0 string) (r0 bool, 
 // you run "go build" or "go run".
 var _ codegen.LatestVersion = codegen.Version[[0][20]struct{}](`
 
-ERROR: You generated this file with 'weaver generate' (devel) (codegen
+ERROR: You generated this file with 'weaver generate' v0.23.0 (codegen
 version v0.20.0). The generated code is incompatible with the version of the
 github.com/ServiceWeaver/weaver module that you're using. The weaver module
 version can be found in your go.mod file or by running the following command.

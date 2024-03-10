@@ -1,0 +1,54 @@
+namespace:  "default"
+deployment_id:  "37dba1bd-7bb2-4203-bea9-45b35f74eb29"
+listeners:  {
+    key:  "boutique"
+    value:  20000
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/actionLogService/ActionLogService"
+    value:  "github.com/ServiceWeaver/onlineboutique/actionLogService/ActionLogService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/adservice/AdService"
+    value:  "github.com/ServiceWeaver/onlineboutique/adservice/AdService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/cartservice/CartService"
+    value:  "github.com/ServiceWeaver/onlineboutique/cartservice/CartService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/cartservice/cartCache"
+    value:  "github.com/ServiceWeaver/onlineboutique/cartservice/cartCache"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/checkoutservice/CheckoutService"
+    value:  "github.com/ServiceWeaver/onlineboutique/checkoutservice/CheckoutService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/currencyservice/CurrencyService"
+    value:  "github.com/ServiceWeaver/onlineboutique/currencyservice/CurrencyService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/emailservice/EmailService"
+    value:  "github.com/ServiceWeaver/onlineboutique/emailservice/EmailService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/paymentservice/PaymentService"
+    value:  "github.com/ServiceWeaver/onlineboutique/paymentservice/PaymentService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/productcatalogservice/ProductCatalogService"
+    value:  "github.com/ServiceWeaver/onlineboutique/productcatalogservice/ProductCatalogService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/recommendationservice/RecommendationService"
+    value:  "github.com/ServiceWeaver/onlineboutique/recommendationservice/RecommendationService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/onlineboutique/shippingservice/ShippingService"
+    value:  "github.com/ServiceWeaver/onlineboutique/shippingservice/ShippingService"
+}
+groups:  {
+    key:  "github.com/ServiceWeaver/weaver/Main"
+    value:  "github.com/ServiceWeaver/weaver/Main"
+}

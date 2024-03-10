@@ -17,10 +17,12 @@ graph TD
     github.com/ServiceWeaver/onlineboutique/productcatalogservice/T(productcatalogservice.T)
     github.com/ServiceWeaver/onlineboutique/recommendationservice/T(recommendationservice.T)
     github.com/ServiceWeaver/onlineboutique/shippingservice/T(shippingservice.T)
+    github.com/ServiceWeaver/onlineboutique/actionLogService/T(actionLogService.T)
     github.com/ServiceWeaver/weaver/Main(weaver.Main)
 
     %% Edges.
     github.com/ServiceWeaver/onlineboutique/cartservice/T --> github.com/ServiceWeaver/onlineboutique/cartservice/cartCache
+    github.com/ServiceWeaver/onlineboutique/cartservice/T --> github.com/ServiceWeaver/onlineboutique/actionLogService/T
     github.com/ServiceWeaver/onlineboutique/checkoutservice/T --> github.com/ServiceWeaver/onlineboutique/cartservice/T
     github.com/ServiceWeaver/onlineboutique/checkoutservice/T --> github.com/ServiceWeaver/onlineboutique/currencyservice/T
     github.com/ServiceWeaver/onlineboutique/checkoutservice/T --> github.com/ServiceWeaver/onlineboutique/emailservice/T

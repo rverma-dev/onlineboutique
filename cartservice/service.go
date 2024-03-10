@@ -17,6 +17,7 @@ package cartservice
 import (
 	"context"
 
+	"github.com/ServiceWeaver/onlineboutique/actionLogService"
 	"github.com/ServiceWeaver/weaver"
 )
 
@@ -36,6 +37,7 @@ type impl struct {
 	weaver.Implements[CartService]
 	cache weaver.Ref[cartCache]
 	store *cartStore
+	alog  weaver.Ref[actionLogService.ActionLogService]
 }
 
 func (s *impl) Init(ctx context.Context) error {
@@ -46,7 +48,12 @@ func (s *impl) Init(ctx context.Context) error {
 
 // AddItem adds a given item to the user's cart.
 func (s *impl) AddItem(ctx context.Context, userID string, item CartItem) error {
-	return s.store.AddItem(ctx, userID, item.ProductID, item.Quantity)
+	err := s.store.AddItem(ctx, userID, item.ProductID, item.Quantity)
+	if err != nil {
+		return err
+	}
+	err = s.alog.Get().ConvertAndSend(ctx)
+	return err
 }
 
 // GetCart returns the items in the user's cart.

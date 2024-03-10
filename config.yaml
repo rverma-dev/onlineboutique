@@ -1,0 +1,8 @@
+appConfig: weaver.toml
+repo: docker.io/rverma-dev
+push: false
+arch: [ linux/arm64  ]
+
+listeners:
+  - name: boutique
+    public: false

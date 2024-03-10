@@ -11,3 +11,6 @@ listeners.boutique = {address = "localhost:12345"}
 [gke]
 regions = ["us-west1"]
 listeners.boutique = {public_hostname = "onlineboutique.serviceweaver.dev"}
+
+[kube]
+listeners.boutique = {public = false, address = "localhost:20000"}
