@@ -10,3 +10,4 @@ spec:
     value: "localhost:6379" # Change if your Redis configuration differs
   - name: redisPassword
     value: "" # Add your Redis password if necessary
+# helm install redis bitnami/redis 
